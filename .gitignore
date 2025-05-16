@@ -1,0 +1,44 @@
+# Node
+node_modules/
+dist/
+build/
+
+# Expo
+.expo/
+.expo-shared/
+
+# Ambiente
+.env
+.env.*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Outros
+*.log
+*.tgz
+
+# Testes
+coverage/
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.Trash-* 
