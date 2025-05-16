@@ -52,6 +52,8 @@
 - [x] Remover arquivos redundantes: adr-v0-stack.md, referencias-benchmarks.md, auth-integracao.md, setup-deploy.md
 - [x] Sugerir fusão de conteúdos técnicos no README e ADR
 - [x] Pasta .cursor enxuta e organizada
+- [x] Inicializar Turborepo e estrutura de pastas
+- [ ] Inicializar projetos base em apps e packages
 
 ## Executor's Feedback or Assistance Requests
 
@@ -59,6 +61,17 @@
 - Recomendo que conteúdos técnicos (setup, deploy, autenticação, benchmarks) fiquem centralizados no README principal e/ou ADR para facilitar consulta e manutenção.
 - A estrutura da pasta `.cursor` agora está mais enxuta, sem duplicidade de informações.
 - Pronto para seguir com a próxima etapa do projeto!
+- Tentei rodar `npx create-turbo@latest .` para inicializar o Turborepo, mas houve erro devido a arquivos já existentes no diretório (`README.md`, `.gitignore`, etc.).
+- Próximo passo: criar manualmente a estrutura de pastas (`/apps`, `/packages`) e configurar o `turbo.json` e `package.json` do monorepo, preservando os arquivos/documentação já existentes.
+- Alternativamente, poderia inicializar o Turborepo em um subdiretório temporário e migrar apenas os arquivos de configuração necessários.
+
+Aguardando confirmação para seguir criando a estrutura manualmente ou migrar configs de um Turborepo temporário.
+
+- Estrutura de pastas criada manualmente: `/apps/web`, `/apps/mobile`, `/apps/backend`, `/packages/ui`, `/packages/types`, `/packages/utils`.
+- package.json raiz criado com workspaces e scripts padrão.
+- turbo.json criado para orquestração de tasks.
+- Próximo passo: inicializar projetos base em cada app/pacote (Next.js, Expo, Node.js/tRPC/Prisma, Tamagui, etc.)
+- Documentação e histórico sendo mantidos neste arquivo.
 
 ---
 
